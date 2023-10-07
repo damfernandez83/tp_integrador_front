@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Curso PHP #23584 - T.P. Integrador - Damián Fernández</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+        <nav class="navbar navbar-expand-lg fixed-top g-0" id="navbar">
+          <div class="container-fluid  g-0">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/codoacodo.png" alt="Logo codo a codo"/> Conf Bs As
+            </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end container-fluid">
+                <li class="nav-item">
+                  <a class="nav-link" href="#conferencia">La conferencia</a>
+                </li>
+                <li class="nav-item"></li>
+                  <a class="nav-link" href="#oradores">Los oradores</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#lugar">El lugar y la fecha</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#conviertete">Conviertete en orador</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.ticketek.com.ar/" target="_blank">Comprar tickets</a>
+                </li>
+                  
+            </div>
+          </div>
+        </nav>
+        <header id="conferencia">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/ba1.jpg" class="d-block w-100" alt="...">
+                  <div class="overlay"></div>
+                  <div class="carousel-caption d-none d-md-block">
+                      <h5>Conf Bs As</h5>
+                      <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                      <div>
+                        <a type="button" class="btn btn-primary" href="#conviertete">Quiero ser orador</a>
+                        <a type="button" class="btn btn-primary" href="https://www.ticketek.com.ar/" target="_blank">Comprar tickets</a>
+                      </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/ba2.jpg" class="d-block w-100" alt="...">
+                  <div class="overlay"></div>
+                  <div class="carousel-caption d-none d-md-block">
+                      <h5>España</h5>
+                      <p>Sevilla, en el sur de España, es una ciudad encantadora conocida por su historia, cultura y pasión por el flamenco. Sus monumentos, como la Giralda y el Alcázar, deslumbran a los visitantes, mientras que su ambiente festivo y la deliciosa comida andaluza hacen que sea un destino inolvidable.</p>
+                      <div>
+                        <a type="button" class="btn btn-primary" href="#conviertete">Quiero saber más</a>
+                        <a type="button" class="btn btn-primary" href="https://www.turismocity.com.ar/" target="_blank">Comprar pasajes</a>
+                      </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                <img src="images/ba3.jpg" class="d-block w-100" alt="...">
+                <div class="overlay"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>La noche</h5>
+                    <p>La noche en Buenos Aires cobra vida con su intensa escena cultural y gastronómica. La ciudad que nunca duerme ofrece una amplia variedad de bares, restaurantes y clubes de tango que invitan a los visitantes a disfrutar de la música y el baile. Las calles iluminadas y la energía nocturna hacen que la experiencia en Buenos Aires sea única y emocionante, perfecta para quienes buscan una vida nocturna animada y vibrante.</p>
+                    <div>
+                      <a type="button" class="btn btn-primary" href="#conviertete">Quiero saber más</a>
+                      <a type="button" class="btn btn-primary" href="https://buenosaires.gob.ar/noticias/vivi-la-noche-de-las-penas-2023?utm_id=cultura" target="_blank">Agenda cultural</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </header>
+        <!-- Inicio sección main, donde están los oradores -->
+        <main id="oradores">
+          <div class="container">
+            <div class="row text-center titulos">
+              <h6>conoce a los</h6>
+              <h2>oradores</h2>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="images/steve.jpg" class="card-img-top" alt="El pelado con polera">
+                    <div class="card-body">
+                      <div>
+                        <span class="badge bg-warning">Snoobismo</span>
+                        <span class="badge bg-info">Poleras</span>
+                      </div>
+                      <h5 class="card-title">Steve Jobs</h5>
+                      <p class="card-text">Cofundador de Apple Inc., fue un visionario de la tecnología que revolucionó la industria de la informática y la comunicación. Con su enfoque en la simplicidad y el diseño elegante, creó productos icónicos como el iPhone y el Macintosh. Su pasión por la innovación y su capacidad para pensar diferente lo convirtieron en una figura influyente que dejó una huella indeleble en el mundo de la tecnología y la cultura contemporánea.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="images/bill.jpg" class="card-img-top" alt="El nerd conspiranoico">
+                    <div class="card-body">
+                      <div>
+                        <span class="badge bg-danger">Monopolios</span>
+                        <span class="badge bg-primary">BSOD</span>
+                      </div>
+                      <h5 class="card-title">Bill Gates</h5>
+                      <p class="card-text">Cofundador de Microsoft, es un influyente empresario y filántropo conocido por su visión tecnológica y su compromiso con la filantropía global a través de la Fundación Bill y Melinda Gates. Su trabajo ha dejado un impacto duradero en la industria de la tecnología y en causas humanitarias.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="images/ada.jpg" class="card-img-top" alt="Ada Lovelace">
+                    <div class="card-body">
+                      <div>
+                        <span class="badge bg-info">Historia</span>
+                        <span class="badge bg-success">Algoritmos</span>
+                      </div>
+                      <h5 class="card-title">Ada Lovelace</h5>
+                      <p class="card-text">Reconocida como la primera programadora de la historia. Su trabajo junto a Charles Babbage en la Máquina Analítica la llevó a escribir el primer algoritmo destinado a ser procesado por una máquina, lo que la convierte en una pionera en la programación y la informática, sentando las bases para la era digital actual. Su legado es fundamental en la historia de la tecnología.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+        </main>
+        <!-- Fin sección main -->
+
+        <!-- Inicio sección honolulu -->
+        <section class="container-fluid turismo mt-5" id="lugar">
+          <div class="row">
+            <div class="col-lg-6 col-sm-12 g-0">
+              <img src="images/honolulu.jpg" alt="honolulu"/>
+            </div>
+            <div class="col-lg-6 col-sm-12 g-0 p-5">
+              <h5>Honolulu</h5>
+              <p>Honolulu es la capital de Hawái y un destino turístico icónico. Esta ciudad costera en la isla de Oahu es famosa por su impresionante belleza natural, playas de arena blanca y aguas cristalinas ideales para practicar surf y buceo. </p>
+              <a type="button" class="btn btn-primary" href="#conviertete">Conocé más</a>
+            </div>
+          </div>
+        </section>
+        <!-- Fin sección honolulu -->
+
+        <!-- Inicio sección formulario de contacto -->
+        <section id="conviertete">
+          <div class="container">
+            <div class="row text-center titulos">
+              <h6 class=>conviértete en</h6>
+              <h2>orador</h2>
+            </div>
+          </div>
+          
+          <div class="container">
+            <p class="text-center">Anótate como orador para dar una <a href="https://www.ignitetalks.io/" target="_blank">charla ignite</a>. Cuéntanos de qué quieres hablar!</p>
+            <form action="#">
+                <div class="row">
+                  <div class="col-lg-6 col-sm-12">
+                    <input type="text" name="nombre" class="form-control" id="exampleInputEmail1" placeholder="Nombre" required>
+                  </div>
+                  <div class="col-lg-6 col-sm-12">
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <textarea class="form-control" placeholder="Sobre qué quieres hablar?" id="floatingTextarea" rows="4"  required></textarea>
+                    <label for="textarea">Recuerda incluir un título para tu charla</label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary container-fluid">Enviar</button>
+            </form>
+          </div>
+        </section>
+        <!-- Fin sección formulario de contacto -->
+
+  
+
+        <footer class="container-fluid p-2">
+            <div class="container">
+                <ul class="row nav">
+                  <li class="col nav-item">
+                    <a href="#">Preguntas Frecuentes</a>
+                  </li>
+                  <li class="col nav-item">
+                    <a href="#">Contáctanos</a>
+                  </li>
+                  <li class="col nav-item">
+                    <a href="#">Prensa</a>
+                  </li>
+                  <li class="col nav-item">
+                    <a href="#">Conferencias</a>
+                  </li>
+                  <li class="col nav-item">
+                    <a href="#">Términos y condiciones</a>
+                  </li>
+                  <li class="col nav-item">
+                    <a href="#">Privacidad</a>
+                  </li>
+                  <li class="col nav-item">
+                    <a href="#">Estudiantes</a>
+                  </li>
+                </ul>
+            </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>
